@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/league_table'
+
+table = LeagueTable.new
+table.each do |team|
+  printf "%2s. %-14s %3d pts\n", team.position, team.name, team.points
+end
